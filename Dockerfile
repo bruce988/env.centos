@@ -1,10 +1,5 @@
 FROM scratch
 MAINTAINER bruce988 <random55@163.com>
-ADD centos-7-docker.tar.xz /
-
-LABEL name="CentOS Base Image" \
-    vendor="CentOS" \
-    license="GPLv2" \
-    build-date="20170801"
+ADD centos-6.6-20150304_1234-docker.tar.xz /
 
 CMD ["/bin/bash"]
