@@ -1,8 +1,10 @@
 FROM scratch
 MAINTAINER bruce988 <random55@163.com>
-ADD c6-docker.tar.xz /
-LABEL Vendor="CentOS"
-LABEL License=GPLv2
+ADD centos-7-docker.tar.xz /
 
-# Default command 
+LABEL name="CentOS Base Image" \
+    vendor="CentOS" \
+    license="GPLv2" \
+    build-date="20170801"
+
 CMD ["/bin/bash"]
